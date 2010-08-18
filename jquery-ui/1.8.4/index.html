@@ -7,6 +7,7 @@
 		<script type="text/javascript" src="../../../ui-libs/jquery/1.4.2/jquery.min.js"></script>
 		<script type="text/javascript" src="../../../ui-libs/jquery-ui/1.8.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="../../../ui-libs/jquery-ui/1.8.4/i18n/jquery-ui-i18n.js"></script>
+		<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
 		<script type="text/javascript">
 			$(function(){
 				//change lang to zh_CN
@@ -89,20 +90,31 @@
 					function() { $(this).removeClass('ui-state-hover'); }
 				);
 				
+				//主题切换器
+				$('#switcher').themeswitcher({
+					initialText:'切换主题',
+					buttonPreText:'主题：',
+					height:400
+				});
+
 			});
 		</script>
 		<style type="text/css">
 			/*demo page css*/
-			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+			body{ font: 12px "宋体","Trebuchet MS", sans-serif; margin: 50px;}
 			.demoHeaders { margin-top: 2em; }
 			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
 			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
 			ul#icons {margin: 0; padding: 0;}
 			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
 			ul#icons span.ui-icon {float: left; margin: 0 4px;}
-		</style>	
+		</style>
 	</head>
 	<body>
+	<div style="position:fixed;right:50px;top:20px;z-index:9999999999;background-color:#ccc;padding:5px;font-size:12px;">
+		<div><b>官方主题切换器:</b></div>
+		<div id="switcher"></div>
+	</div>
 	<h1>欢迎来到 jQuery UI 的世界！ (Welcome to jQuery UI!)</h1>
 	<p style="font-size: 1.3em; line-height: 1.5; margin: 1em 0; width: 50%;">
 		此页面演示你所选下载主题对应的widgets。包含了压缩后的版本，你只需引用即可使用整个jQuery UI CSS 框架。也可以按照个人的需要有选择的引用相关的分离文件。
@@ -163,7 +175,7 @@
 		
 		<!-- ui-dialog -->
 		<div id="dialog" title="对话框标题 (Dialog Title)">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>中文内容信息，中文内容信息，中文内容信息，中文内容信息，中文内容信息，中文内容信息，中文内容信息，中文内容信息，中文内容信息。zLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 			
 				
